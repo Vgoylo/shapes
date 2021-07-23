@@ -12,6 +12,6 @@ class Circle < Shape
   end
 
   def square
-    BigMath.PI(5) * radius**2
+    (BigMath.PI(5) * radius**2).round(2)
   end
 end
