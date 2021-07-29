@@ -1,11 +1,13 @@
 require_relative 'src/triangle'
 require_relative 'src/circle'
 require_relative 'src/rectangle'
+require_relative 'src/square'
 
 puts 'select the area of which figure you want to calculate: '
 puts '1. triangle'
 puts '2. circle'
 puts '3. rectangle'
+puts '4. square'
 
 shape = gets.chomp
 
@@ -28,6 +30,11 @@ elsif shape == '3'
   width = gets.chomp.to_i
   rectangle = Rectangle.new(long, width)
   puts "rectangle square - #{rectangle.square}"
-elsif 
+elsif shape == '4'
+  puts 'Please, enter the square long: '
+  long = gets.chomp.to_i
+  square = Square.new(long)
+  puts "square square - #{square.square}"
+else
   puts 'Invalid inpud'
 end
