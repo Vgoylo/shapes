@@ -1,15 +1,9 @@
+# frozen_string_literal: true
+
 require_relative 'src/triangle'
 require_relative 'src/circle'
 require_relative 'src/rectangle'
 require_relative 'src/square'
-
-puts 'select the area of which figure you want to calculate: '
-puts '1. triangle'
-puts '2. circle'
-puts '3. rectangle'
-puts '4. square'
-
-shape = gets.chomp
 
 def triangle
   puts 'Please, enter the triangle side: '
@@ -41,16 +35,24 @@ def square
   long = gets.chomp.to_i
   square = Square.new(long)
   puts "square square - #{square.square}"
-
 end
-if shape == '1'
+
+puts 'select the area of which figure you want to calculate: '
+puts '1. triangle'
+puts '2. circle'
+puts '3. rectangle'
+puts '4. square'
+
+shape = gets.chomp
+case shape
+when '1'
   triangle
-elsif shape == '2'
+when '2'
   circle
-elsif shape == '3'
+when '3'
   rectangle
-elsif shape == '4'
+when '4'
   square
 else
-  puts 'Invalid inpud'
+  puts 'Invalid input'
 end

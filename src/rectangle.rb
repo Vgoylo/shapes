@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative 'shape'
 
 class Rectangle < Shape
@@ -5,7 +7,7 @@ class Rectangle < Shape
 
   def initialize(long, width)
     @long = long
-    @width = width 
+    @width = width
   end
 
   def square

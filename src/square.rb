@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative 'shape'
 
 class Square < Shape
@@ -11,4 +13,3 @@ class Square < Shape
     long**2
   end
 end
- 

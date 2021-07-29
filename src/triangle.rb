@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 require_relative 'shape'
 
 class Triangle < Shape

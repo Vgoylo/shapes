@@ -1,8 +1,9 @@
+# frozen_string_literal: true
+
 require_relative 'shape'
-require "bigdecimal/math"
+require 'bigdecimal/math'
 
-class Circle < Shape 
-
+class Circle < Shape
   include BigMath
 
   attr_reader :radius
