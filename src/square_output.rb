@@ -1,5 +1,6 @@
 # frozen_string_literal: true
 
+require 'pry'
 require_relative 'triangle'
 require_relative 'circle'
 require_relative 'rectangle'
@@ -18,6 +19,7 @@ class SquareOutput
     height = gets.chomp.to_i
     triangle = Triangle.new(side, height)
     print_square(triangle)
+    puts triangle.say('blue')
   end
 
   def self.circle
@@ -25,6 +27,7 @@ class SquareOutput
     radius = gets.chomp.to_i
     circle = Circle.new(radius)
     print_square(circle)
+    puts circle.say('yellow')
   end
 
   def self.rectangle
@@ -34,6 +37,7 @@ class SquareOutput
     width = gets.chomp.to_i
     rectangle = Rectangle.new(long, width)
     print_square(rectangle)
+    puts rectangle.say('green')
   end
 
   def self.square
@@ -41,5 +45,6 @@ class SquareOutput
     long = gets.chomp.to_i
     square = Square.new(long)
     print_square(square)
+    puts square.say('red')
   end
 end

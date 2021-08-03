@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require_relative 'src/square_output'
+require_relative 'src/triangle'
 
 puts 'select the area of which figure you want to calculate: '
 puts '1. triangle'
